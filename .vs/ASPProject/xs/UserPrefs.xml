@@ -3,22 +3,24 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.ASPProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ASPProject/Data/AppDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ASPProject/Models/Product.cs">
     <Files>
       <File FileName="ASPProject/Data/AppDbContext.cs" Line="12" Column="53" />
       <File FileName="ASPProject/Models/AppUser.cs" Line="1" Column="1" />
       <File FileName="ASPProject/Models/Setting.cs" Line="4" Column="35" />
+      <File FileName="ASPProject/Models/BaseEntity.cs" Line="1" Column="1" />
+      <File FileName="ASPProject/Models/Product.cs" Line="4" Column="35" />
+      <File FileName="ASPProject/Models/Category.cs" Line="4" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ASPProject" expanded="True">
+          <Node name="ASPProject">
             <Node name="ASPProject">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True">
-                <Node name="AppDbContext.cs" selected="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Product.cs" selected="True" />
               </Node>
-              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True">
