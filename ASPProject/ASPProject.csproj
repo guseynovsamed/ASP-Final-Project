@@ -9,6 +9,7 @@
   <ItemGroup>
     <Content Remove="wwwroot\" />
     <Content Remove="wwwroot\assets\" />
+    <Content Remove="wwwroot\admin\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\" />
@@ -28,7 +29,15 @@
     <Folder Include="wwwroot\assets\" />
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\Header\" />
-    <Folder Include="VIewComponents\" />
+    <Folder Include="Areas\Admin\Views\Dashboard\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="wwwroot\admin\" />
+    <Folder Include="ViewModels\Sliders\" />
+    <Folder Include="ViewModels\Sliders\SliderInfos\" />
+    <Folder Include="Areas\Admin\Views\SliderInfo\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Helpers\Extensions\" />
+    <Folder Include="Areas\Admin\Views\Slider\" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Properties\launchSettings.json">
@@ -64,6 +73,13 @@
     <None Remove="Views\Home\" />
     <None Remove="Views\Shared\Components\" />
     <None Remove="Views\Shared\Components\Header\" />
-    <None Remove="VIewComponents\" />
+    <None Remove="Areas\Admin\Views\Dashboard\" />
+    <None Remove="Areas\Admin\Views\Shared\" />
+    <None Remove="ViewModels\Sliders\" />
+    <None Remove="ViewModels\Sliders\SliderInfos\" />
+    <None Remove="Areas\Admin\Views\SliderInfo\" />
+    <None Remove="Helpers\" />
+    <None Remove="Helpers\Extensions\" />
+    <None Remove="Areas\Admin\Views\Slider\" />
   </ItemGroup>
 </Project>

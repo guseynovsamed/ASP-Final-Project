@@ -10,6 +10,8 @@ namespace ASPProject.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Setting> Settings { get; set; }
+        public DbSet<SliderInfo> SliderInfos { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
