@@ -38,6 +38,8 @@
     <Folder Include="Helpers\" />
     <Folder Include="Helpers\Extensions\" />
     <Folder Include="Areas\Admin\Views\Slider\" />
+    <Folder Include="Areas\Admin\Views\Featur\" />
+    <Folder Include="ViewModels\Featurs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Properties\launchSettings.json">
@@ -81,5 +83,7 @@
     <None Remove="Helpers\" />
     <None Remove="Helpers\Extensions\" />
     <None Remove="Areas\Admin\Views\Slider\" />
+    <None Remove="Areas\Admin\Views\Featur\" />
+    <None Remove="ViewModels\Featurs\" />
   </ItemGroup>
 </Project>
