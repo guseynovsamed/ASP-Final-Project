@@ -19,10 +19,12 @@ namespace ASPProject.Controllers
 		public async Task<IActionResult> Index()
 		{
 			List<SliderInfo> sliderInfos = await _context.SliderInfos.ToListAsync();
+            List<Slider> sliders = await _context.Sliders.ToListAsync();
 
-			HomeVM model = new()
+            HomeVM model = new()
 			{
-				SliderInfos = sliderInfos
+				SliderInfos = sliderInfos,
+				Sliders=sliders
 			};
 
 			return View(model);

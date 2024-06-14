@@ -1,41 +1,27 @@
 ﻿<Properties StartupConfiguration="{D4A89564-CAF1-4FB9-9189-81C015F3188A}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ASPProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ASPProject/Areas/Admin/Views/Slider/Index.cshtml">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ASPProject/Program.cs">
     <Files>
-      <File FileName="ASPProject/Areas/Admin/Controllers/SliderController.cs" Line="23" Column="119" />
-      <File FileName="ASPProject/Areas/Admin/Views/Slider/Index.cshtml" Line="5" Column="50" />
-      <File FileName="ASPProject/ViewModels/Sliders/SliderVM.cs" Line="6" Column="28" />
-      <File FileName="ASPProject/Areas/Admin/Views/SliderInfo/Index.cshtml" Line="1" Column="1" />
+      <File FileName="ASPProject/Views/Home/Index.cshtml" Line="36" Column="13" />
+      <File FileName="ASPProject/Program.cs" Line="41" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ASPProject">
+          <Node name="ASPProject" expanded="True">
             <Node name="ASPProject">
-              <Node name="Areas" expanded="True">
-                <Node name="Admin">
-                  <Node name="Views">
-                    <Node name="Dashboard" expanded="True" />
-                    <Node name="Shared" expanded="True" />
-                    <Node name="Slider">
-                      <Node name="Index.cshtml" selected="True" />
-                    </Node>
-                    <Node name="SliderInfo" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
               <Node name="Services" expanded="True" />
-              <Node name="ViewModels" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ASPProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

@@ -11,6 +11,8 @@
             <thead>
                 <tr>
                     <th class="border-top-0">Image</th>
+                    <th class="border-top-0">Title</th>
+                    <th class="border-top-0">Description</th>
                     <th class="border-top-0">Operations</th>
                 </tr>
             </thead>
@@ -21,6 +23,12 @@
                         <td class="txt-oflo">
                             <img src="~/assets/img/@item.BackgroundImage" style="width:200px !important; height:200px" />
                         </td>
+                        <td class="txt-oflo">
+                            <h6>@item.Title</h6>
+                        </td>
+                        <td class="txt-oflo">
+                            <h6>@item.Description</h6>
+                        </td>
                         <td>
                             <a class="btn btn-info text-white" asp-action="Detail" asp-route-id="@item.Id">Info</a>
                             <a class="btn btn-warning text-white" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
@@ -30,6 +38,7 @@
                         </td>
                     </tr>
                 }
+            <tbody>
         </table>
     </div>
 </div>

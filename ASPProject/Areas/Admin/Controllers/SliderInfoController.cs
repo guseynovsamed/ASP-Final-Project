@@ -152,6 +152,7 @@ namespace ASPProject.Areas.Admin.Controllers
         [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> Delete(int? id)
         {
+            if (!ModelState.IsValid) return View();
             if (id is null) return BadRequest();
             var sliderInfo = await _context.SliderInfos.FirstOrDefaultAsync(m => m.Id == id);
             if (sliderInfo is null) return NotFound();
@@ -167,23 +168,16 @@ namespace ASPProject.Areas.Admin.Controllers
         public async Task<IActionResult> Detail(int? id)
         {
             if (id is null) return BadRequest();
-
-            SliderInfo sliderInfo = await _context.SliderInfos.Where(m => m.Id == id)
-                                                  .FirstOrDefaultAsync();
-
+            SliderInfo sliderInfo = await _context.SliderInfos.Where(m => m.Id == id).FirstOrDefaultAsync();
             if (sliderInfo is null) return NotFound();
-
             SliderInfoDetailVM model = new()
             {
                 Title = sliderInfo.Title,
                 Description = sliderInfo.Description,
                 BackgroundImage = sliderInfo.BackgroundImage
             };
-
             return View(model);
         }
-
-
     }
 }
 
