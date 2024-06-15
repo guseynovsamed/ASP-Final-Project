@@ -20,13 +20,17 @@ namespace ASPProject.Controllers
 		{
 			List<SliderInfo> sliderInfos = await _context.SliderInfos.ToListAsync();
             List<Slider> sliders = await _context.Sliders.ToListAsync();
-			List<Featur> featurs = await _context.Featurs.ToListAsync(); 
+			List<Featur> featurs = await _context.Featurs.ToListAsync();
+			List<Fact> facts = await _context.Facts.ToListAsync();
+			List<SelectedProduct> selectedProducts = await _context.SelectedProducts.ToListAsync();
 
             HomeVM model = new()
 			{
 				SliderInfos = sliderInfos,
 				Sliders=sliders,
-				Featurs=featurs
+				Featurs=featurs,
+				Facts=facts,
+                SelectedProducts = selectedProducts
 			};
 
 			return View(model);

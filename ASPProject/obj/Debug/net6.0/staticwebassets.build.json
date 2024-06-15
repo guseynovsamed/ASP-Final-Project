@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5XT//3Jt73s3jf9Y9zWVScoNzmdC6x0zo5ZwQu1VNzU=",
+  "Hash": "dOBBxpOAourQ4NOWKYKftXlCKyuAX/QHl7dgAf9jDmI=",
   "Source": "ASPProject",
   "BasePath": "_content/ASPProject",
   "Mode": "Default",
@@ -7546,6 +7546,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/img/cart-page-header-img.jpg"
+    },
+    {
+      "Identity": "/Users/samedguseynov/Backend/ASPProject/ASPProject/wwwroot/assets/img/f4ddaec8-9c84-4556-8b78-03c6792fb1d3-baner-1.png",
+      "SourceId": "ASPProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samedguseynov/Backend/ASPProject/ASPProject/wwwroot/",
+      "BasePath": "_content/ASPProject",
+      "RelativePath": "assets/img/f4ddaec8-9c84-4556-8b78-03c6792fb1d3-baner-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/img/f4ddaec8-9c84-4556-8b78-03c6792fb1d3-baner-1.png"
     },
     {
       "Identity": "/Users/samedguseynov/Backend/ASPProject/ASPProject/wwwroot/assets/img/featur-1.jpg",

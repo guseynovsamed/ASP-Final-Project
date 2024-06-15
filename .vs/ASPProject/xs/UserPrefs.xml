@@ -1,28 +1,20 @@
 ﻿<Properties StartupConfiguration="{D4A89564-CAF1-4FB9-9189-81C015F3188A}|Default">
-  <MonoDevelop.Ide.ItemProperties.ASPProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ASPProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ASPProject/Views/Home/Index.cshtml">
+    <Files>
+      <File FileName="ASPProject/Views/Home/Index.cshtml" Line="601" Column="90" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ASPProject" expanded="True">
+          <Node name="ASPProject">
             <Node name="ASPProject">
-              <Node name="Areas" expanded="True">
-                <Node name="Admin" expanded="True">
-                  <Node name="Controllers" expanded="True" />
-                  <Node name="Views" expanded="True">
-                    <Node name="Featur" expanded="True" />
-                    <Node name="Slider" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="ViewModels" expanded="True" />
-              <Node name="Views">
-                <Node name="Home">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
                   <Node name="Index.cshtml" selected="True" />
                 </Node>
               </Node>
@@ -32,5 +24,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
