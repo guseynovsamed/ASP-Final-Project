@@ -1,24 +1,23 @@
 ﻿<Properties StartupConfiguration="{D4A89564-CAF1-4FB9-9189-81C015F3188A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ASPProject/Views/Home/Index.cshtml">
-    <Files>
-      <File FileName="ASPProject/Areas/Admin/Controllers/OfferController.cs" Line="1" Column="1" />
-      <File FileName="ASPProject/Controllers/HomeController.cs" Line="36" Column="6" />
-      <File FileName="ASPProject/Views/Home/Index.cshtml" Line="423" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ASPProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ASPProject" expanded="True">
+          <Node name="ASPProject">
             <Node name="ASPProject">
               <Node name="Areas" expanded="True">
                 <Node name="Admin" expanded="True">
                   <Node name="Controllers" expanded="True" />
                 </Node>
               </Node>
-              <Node name="Views">
-                <Node name="Home">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
+              <Node name="Models">
+                <Node name="Fact.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -26,11 +25,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ASPProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
