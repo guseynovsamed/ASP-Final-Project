@@ -23,6 +23,7 @@ namespace ASPProject.Controllers
 			List<Featur> featurs = await _context.Featurs.ToListAsync();
 			List<Fact> facts = await _context.Facts.ToListAsync();
 			List<SelectedProduct> selectedProducts = await _context.SelectedProducts.ToListAsync();
+			List<Offer> offers = await _context.Offers.ToListAsync();
 
             HomeVM model = new()
 			{
@@ -30,7 +31,8 @@ namespace ASPProject.Controllers
 				Sliders=sliders,
 				Featurs=featurs,
 				Facts=facts,
-                SelectedProducts = selectedProducts
+                SelectedProducts = selectedProducts,
+				Offers=offers
 			};
 
 			return View(model);

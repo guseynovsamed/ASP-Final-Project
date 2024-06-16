@@ -10,6 +10,7 @@ namespace ASPProject.ViewModels
 		public List<Featur> Featurs { get; set; }
 		public List<Fact>Facts { get; set; }
 		public List<SelectedProduct> SelectedProducts { get; set; }
+		public List<Offer> Offers { get; set; }
     }
 }
 

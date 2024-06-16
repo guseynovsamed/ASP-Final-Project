@@ -44,6 +44,8 @@
     <Folder Include="Areas\Admin\Views\Fact\" />
     <Folder Include="ViewModels\SelectedProducts\" />
     <Folder Include="Areas\Admin\Views\SelectedProduct\" />
+    <Folder Include="ViewModels\Offers\" />
+    <Folder Include="Areas\Admin\Views\Offer\" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Properties\launchSettings.json">
@@ -93,5 +95,7 @@
     <None Remove="Areas\Admin\Views\Fact\" />
     <None Remove="ViewModels\SelectedProducts\" />
     <None Remove="Areas\Admin\Views\SelectedProduct\" />
+    <None Remove="ViewModels\Offers\" />
+    <None Remove="Areas\Admin\Views\Offer\" />
   </ItemGroup>
 </Project>

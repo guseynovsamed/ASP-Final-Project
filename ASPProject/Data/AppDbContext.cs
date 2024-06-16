@@ -15,6 +15,7 @@ namespace ASPProject.Data
         public DbSet<Featur> Featurs { get; set; }
         public DbSet<Fact> Facts { get; set; }
         public DbSet<SelectedProduct> SelectedProducts { get; set; }
+        public DbSet<Offer> Offers { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
