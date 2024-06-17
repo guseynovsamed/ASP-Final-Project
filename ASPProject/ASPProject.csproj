@@ -46,6 +46,9 @@
     <Folder Include="Areas\Admin\Views\SelectedProduct\" />
     <Folder Include="ViewModels\Offers\" />
     <Folder Include="Areas\Admin\Views\Offer\" />
+    <Folder Include="Views\Shared\Components\Footer\" />
+    <Folder Include="Areas\Admin\Views\Category\" />
+    <Folder Include="ViewModels\Categories\" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Properties\launchSettings.json">
@@ -97,5 +100,8 @@
     <None Remove="Areas\Admin\Views\SelectedProduct\" />
     <None Remove="ViewModels\Offers\" />
     <None Remove="Areas\Admin\Views\Offer\" />
+    <None Remove="Views\Shared\Components\Footer\" />
+    <None Remove="Areas\Admin\Views\Category\" />
+    <None Remove="ViewModels\Categories\" />
   </ItemGroup>
 </Project>

@@ -24,6 +24,8 @@ namespace ASPProject.Controllers
 			List<Fact> facts = await _context.Facts.ToListAsync();
 			List<SelectedProduct> selectedProducts = await _context.SelectedProducts.ToListAsync();
 			List<Offer> offers = await _context.Offers.ToListAsync();
+			Dictionary<string, string> settings = await _context.Settings.ToDictionaryAsync(m => m.Key, m => m.Value);
+			List<Category> categories = await _context.Categories.ToListAsync();
 
             HomeVM model = new()
 			{
@@ -32,7 +34,9 @@ namespace ASPProject.Controllers
 				Featurs=featurs,
 				Facts=facts,
                 SelectedProducts = selectedProducts,
-				Offers=offers
+				Offers=offers,
+                Settings = settings,
+				Categories=categories
 			};
 
 			return View(model);

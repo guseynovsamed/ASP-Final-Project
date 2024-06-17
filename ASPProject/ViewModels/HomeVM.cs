@@ -11,6 +11,8 @@ namespace ASPProject.ViewModels
 		public List<Fact>Facts { get; set; }
 		public List<SelectedProduct> SelectedProducts { get; set; }
 		public List<Offer> Offers { get; set; }
+		public Dictionary<string,string> Settings { get; set; }
+		public List<Category> Categories { get; set; }
     }
 }
 
