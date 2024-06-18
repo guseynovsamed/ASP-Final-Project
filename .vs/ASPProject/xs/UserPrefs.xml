@@ -4,13 +4,39 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.ASPProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ASPProject/Areas/Admin/Views/Product/Edit.cshtml">
+    <Files>
+      <File FileName="ASPProject/Areas/Admin/Controllers/ProductController.cs" Line="204" Column="13" />
+      <File FileName="ASPProject/ViewModels/Products/ProductEditVM.cs" Line="7" Column="18" />
+      <File FileName="ASPProject/Areas/Admin/Views/Product/Edit.cshtml" Line="29" Column="59" />
+      <File FileName="ASPProject/Areas/Admin/Views/Product/Create.cshtml" Line="32" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State name="__root__" />
+        <State name="__root__">
+          <Node name="ASPProject" expanded="True">
+            <Node name="ASPProject">
+              <Node name="Areas">
+                <Node name="Admin">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Views">
+                    <Node name="Product" expanded="True">
+                      <Node name="Edit.cshtml" selected="True" />
+                    </Node>
+                    <Node name="Shared" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="Products" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

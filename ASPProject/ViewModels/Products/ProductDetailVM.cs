@@ -1,18 +1,18 @@
 ﻿using System;
-namespace ASPProject.Models
+using ASPProject.Models;
+
+namespace ASPProject.ViewModels.Products
 {
-    public class Product : BaseEntity
-    {
+	public class ProductDetailVM
+	{
         public string Name { get; set; }
         public string Description { get; set; }
         public int Count { get; set; }
         public decimal Price { get; set; }
-        public Category Category { get; set; }
-        public int CategoryId { get; set; }
+        public string Category { get; set; }
         public int RatingCount { get; set; } = 0;
         public int SellingCount { get; set; } = 0;
-        public ICollection<ProductImage> ProductImage { get; set; }
-        public ICollection<Comment> Comments { get; set; }
+        public List<ProductImageVM> ProductImage { get; set; }
 
     }
 }
