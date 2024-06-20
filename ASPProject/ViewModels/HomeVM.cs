@@ -13,6 +13,7 @@ namespace ASPProject.ViewModels
 		public List<Offer> Offers { get; set; }
 		public Dictionary<string,string> Settings { get; set; }
 		public List<Category> Categories { get; set; }
+		public List<Product> Products { get; set; }
     }
 }
 

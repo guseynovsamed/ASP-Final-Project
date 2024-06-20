@@ -51,6 +51,10 @@
     <Folder Include="ViewModels\Categories\" />
     <Folder Include="Areas\Admin\Views\Product\" />
     <Folder Include="ViewModels\Products\" />
+    <Folder Include="Views\Product\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="Helpers\Enum\" />
+    <Folder Include="ViewModels\Accounts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Properties\launchSettings.json">
@@ -107,5 +111,9 @@
     <None Remove="ViewModels\Categories\" />
     <None Remove="Areas\Admin\Views\Product\" />
     <None Remove="ViewModels\Products\" />
+    <None Remove="Views\Product\" />
+    <None Remove="Views\Account\" />
+    <None Remove="Helpers\Enum\" />
+    <None Remove="ViewModels\Accounts\" />
   </ItemGroup>
 </Project>
