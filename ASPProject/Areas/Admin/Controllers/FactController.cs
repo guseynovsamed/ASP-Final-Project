@@ -1,7 +1,9 @@
 ﻿using System;
 using ASPProject.Data;
+using ASPProject.Helpers.Enum;
 using ASPProject.Models;
 using ASPProject.ViewModels.Facts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,6 +30,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult Create()
         {
             return View();
@@ -36,6 +39,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Create(FactCreateVM request)
         {
             if (!ModelState.IsValid) return View();
@@ -74,6 +78,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (!ModelState.IsValid) return View();
@@ -87,6 +92,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id is null) return BadRequest();
@@ -106,6 +112,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Edit(int? id , FactEditVM factEdit)
         {
             if (!ModelState.IsValid) return View();

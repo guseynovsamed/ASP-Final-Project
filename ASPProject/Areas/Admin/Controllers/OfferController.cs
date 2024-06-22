@@ -1,9 +1,11 @@
 ﻿using System;
 using ASPProject.Data;
+using ASPProject.Helpers.Enum;
 using ASPProject.Helpers.Extensions;
 using ASPProject.Models;
 using ASPProject.ViewModels.Offers;
 using ASPProject.ViewModels.Sliders.SliderInfos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -31,6 +33,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult Create()
         {
             return View();
@@ -39,6 +42,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Create(OfferCreateVM request)
         {
             if (!ModelState.IsValid) return View();
@@ -96,6 +100,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id is null) return BadRequest();
@@ -110,6 +115,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id is null) return BadRequest();
@@ -129,6 +135,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Edit(int? id, OfferEditVM request)
         {
             if (id is null) return BadRequest();

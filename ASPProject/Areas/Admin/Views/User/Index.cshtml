@@ -1,0 +1,40 @@
+﻿@model List<UserRolesVM>
+
+
+
+<div class="conatiner mt-5">
+    <div class="create-category" style="margin-left: 13px;">
+        <a asp-action="Create" class="btn btn-success" style="font-size: 17px;">Add role to user</a>
+    </div>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Fullname</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Roles</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.FullName
+                        </td>
+                        <td>
+                            @item.Email
+                        </td>
+                        <td>
+                            @item.Username
+                        </td>
+                        <td>
+                            @item.Roles
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

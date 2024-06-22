@@ -55,6 +55,8 @@
     <Folder Include="Views\Account\" />
     <Folder Include="Helpers\Enum\" />
     <Folder Include="ViewModels\Accounts\" />
+    <Folder Include="ViewModels\User\" />
+    <Folder Include="Areas\Admin\Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Properties\launchSettings.json">
@@ -115,5 +117,7 @@
     <None Remove="Views\Account\" />
     <None Remove="Helpers\Enum\" />
     <None Remove="ViewModels\Accounts\" />
+    <None Remove="ViewModels\User\" />
+    <None Remove="Areas\Admin\Views\User\" />
   </ItemGroup>
 </Project>

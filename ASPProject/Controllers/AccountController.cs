@@ -2,6 +2,7 @@
 using ASPProject.Helpers.Enum;
 using ASPProject.Models;
 using ASPProject.ViewModels.Accounts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -56,7 +57,7 @@ namespace ASPProject.Controllers
                 return View(request);
             }
 
-            await _userManager.AddToRoleAsync(user, nameof(Roles.Member));
+            await _userManager.AddToRoleAsync(user, nameof(Roles.Admin));
 
 
             return RedirectToAction("Index", "Home");

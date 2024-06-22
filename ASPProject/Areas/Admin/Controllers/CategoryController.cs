@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Xml.Linq;
 using ASPProject.Data;
+using ASPProject.Helpers.Enum;
 using ASPProject.Models;
 using ASPProject.ViewModels.Categories;
 using ASPProject.ViewModels.SelectedProducts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,6 +22,7 @@ namespace ASPProject.Areas.Admin.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> Index()
         {
             List<Category> categories = await _context.Categories.ToListAsync();
@@ -28,6 +31,7 @@ namespace ASPProject.Areas.Admin.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult Create()
         {
             return View();
@@ -36,6 +40,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Create(CategoryCreateVM request)
         {
             if (!ModelState.IsValid) return View();
@@ -74,6 +79,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id is null) return BadRequest();
@@ -86,6 +92,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id is null) return BadRequest();
@@ -104,6 +111,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Edit(int? id, CategoryEditVM request)
         {
             if (!ModelState.IsValid) return View();

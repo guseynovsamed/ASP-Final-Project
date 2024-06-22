@@ -1,8 +1,10 @@
 ﻿using ASPProject.Data;
 using ASPProject.Helpers;
+using ASPProject.Helpers.Enum;
 using ASPProject.Helpers.Extensions;
 using ASPProject.Models;
 using ASPProject.ViewModels.Products;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -25,6 +27,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> Index(int page = 1, int take = 4)
         {
             var paginateDatas = await _context.Products.Include(m => m.Category)
@@ -62,6 +65,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Create()
         {
             var categories = await _context.Categories.ToListAsync();
@@ -73,6 +77,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
 
         [HttpPost]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Create(ProductCreateVM request)
         {
             var categories = await _context.Categories.ToListAsync();
@@ -132,6 +137,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id is null) return BadRequest();
@@ -195,6 +201,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Edit(int? id)
         {
 
@@ -234,6 +241,7 @@ namespace ASPProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Edit(int? id, ProductEditVM request)
         {
             var categories = await _context.Categories.ToListAsync();
